@@ -23,20 +23,20 @@ actionBtn.onclick = () => {
         maxYInput.style.border = "";
 
         if(!maxX && !maxY){
-            alert("Enter a vaild Max X and Y");
+            alert("Please enter the vaild numbers");
             maxXInput.style.border = "2px solid red"
             maxYInput.style.border = "2px solid red"
             return
         }
 
         if(!maxX){
-            alert("Enter a valid Max X")
+            alert("Please enter a vaild number for row")
             maxXInput.style.border = "2px solid red"
             return;
         }
 
         if(!maxY){
-            alert("Enter a vaild Max Y")
+            alert("Please enter a vaild number for column")
             maxYInput.style.border = "2px solid red";
             return;
         }
@@ -119,4 +119,5 @@ resetBtn.onclick = () => {
     gridContainer.innerHTML = '';
     grid = [];
 };
+
 
