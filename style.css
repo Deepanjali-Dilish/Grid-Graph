@@ -97,3 +97,85 @@ input:focus {
   }
 } 
  
+
+
+
+.login-box {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  margin: auto;
+}
+
+.login-logo {
+  color: #3b82f6;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#password{
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0px 20px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.big-checkbox{
+  transform: scale(1.5);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.show-password{
+  color: grey;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: #3b82f6;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-box button:hover {
+  background: #2563eb;
+}
+
+.forgot-link {
+  display: block;
+  margin: 20px 0 10px 0px;
+  color: #3b82f6;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.signup-text {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.signup-text a {
+  color: #3b82f6;
+  text-decoration: none;
+}
