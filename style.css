@@ -91,14 +91,13 @@ input:focus {
   outline: none;
 }
 
+
 @media screen and (max-width: 768px){
   .controls{
     flex-direction: column;
   }
 } 
  
-
-
 
 .login-box {
   background: #fff;
@@ -179,3 +178,5 @@ input:focus {
   color: #3b82f6;
   text-decoration: none;
 }
+
+
