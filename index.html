@@ -7,53 +7,32 @@
   <title>Document</title>
 </head>
 <body>
-   <div class="container">
-     <h2>Grid Marker</h2>
-
-      <div class="controls">
-          <input type="number" id="maxX" placeholder="Enter the value (row)" min="1"/>
-          <input type="number" id="maxY" placeholder="Enter the value (column)" min="1"/>
+  <div class="container">
+    <div class="main-wrapper">
+      <div class="grid-heading">Graph Sessions</div>
+      <div id="gridsList"></div> 
+      <div class="content">        
+        <h2>Grid Graph</h2>
+  
+        <div class="controls">
+            <input type="number" id="maxX" placeholder="Enter the MaxX value (row)" min="1"/>
+            <input type="number" id="maxY" placeholder="Enter the MaxY value (column)" min="1"/>
+        </div>
+  
+        <div class="controls">
+          <input type="number" id="xVal" placeholder="Enter the X value" min="0"/>
+          <input type="number" id="yVal" placeholder="Enter the Y value" min="0"/>
+        </div>
+  
+        <div class="controls-btn">
+          <button id="actionBtn" class="add">Add Graph</button>
+          <button id="deleteBtn">Delete Graph</button>
+          <button id="resetBtn">Reset</button>
+        </div>
       </div>
-
-      <div class="controls">
-        <input type="number" id="xVal" placeholder="Enter the X value" min="0"/>
-        <input type="number" id="yVal" placeholder="Enter the Y value" min="0"/>
-      </div>
-
-      <div class="controls-btn">
-        <button id="actionBtn">Draw</button>
-        <button id="resetBtn">Reset</button>
-      </div>
-
-      <div id="gridContainer"></div>
-      <!-- <div id="gridsList"></div> -->
-
-  </div> 
- 
+    </div>
+  </div>
   
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

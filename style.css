@@ -2,20 +2,23 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: Arial, sans-serif;
+body {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  min-height: 100vh;        
   padding: 40px 20px 20px 20px;
   margin: 0;
   background: #94b1d0;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.container{
-  max-width: 600px;
-  margin: auto;
+
+.content{
   background: #8da4ac;
-  padding: 20px;
-  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px
 }
 
 h2{
@@ -25,7 +28,7 @@ h2{
 
 .controls{
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
   justify-content: space-between;
   margin-bottom: 15px;
@@ -46,6 +49,7 @@ h2{
   margin-bottom: 15px;
   justify-content: space-around;
   align-items: center;
+  gap: 5px;
 }
 
 .controls-btn button{
@@ -74,7 +78,7 @@ h2{
 .cell{
   width: 100%;
   aspect-ratio: 1/ 1;
-  border: 1px solid #c1a1a1;
+  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,13 +95,20 @@ input:focus {
   outline: none;
 }
 
+.grid-section {
+  margin-top: 20px;
+  padding: 10px;
+  background: #e6eff5;
+  border-radius: 6px;
+}
+  
+.grid-section h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
 
-@media screen and (max-width: 768px){
-  .controls{
-    flex-direction: column;
-  }
-} 
- 
+
 
 .login-box {
   background: #fff;
@@ -179,4 +190,88 @@ input:focus {
   text-decoration: none;
 }
 
+.add{
+  margin-bottom: 10px;
+}
 
+.grid-container {
+  border: 1px solid #ccc;
+}
+
+.sub-cell {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.sub-cell.marked {
+  background-color: yellow;
+}
+
+.main-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  flex-direction: column-reverse;
+}
+
+#gridsList {
+  flex: 1;
+  min-width: 280px;
+}
+
+.content {
+  flex: 1;
+  min-width: 260px;
+  max-width: 320px;
+}
+
+.grid-heading{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
+  .main-wrapper {
+    flex-direction: row;
+    gap: 70px;
+    align-items: flex-start;
+  }
+
+  #gridsList {
+    flex: 1;
+    min-width: 400px;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+    scrollbar-width: none;
+  }
+
+  .grid-heading {
+    display: inline;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  #gridsList {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0; 
+  }
+
+  .content {
+    flex: 0 0 auto;
+    max-width: 320px;
+  }
+}
