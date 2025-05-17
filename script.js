@@ -18,7 +18,7 @@ function createGridElement(maxX, maxY, index) {
     container.className = 'grid-section';
 
     const heading = document.createElement('h3');
-    heading.textContent = `Grid ${index + 1}`;
+    heading.textContent = `Grid Graph ${index + 1}`;
     heading.style.cursor = 'pointer';
 
     const gridContainer = document.createElement('div');
@@ -107,7 +107,7 @@ actionBtn.onclick = () => {
         }
 
         if(maxX > parseInt (maxXInput.max)){
-            alert('Enter the valid value for Max X (row)');
+            alert(`Enter the valid value for Max X (row)`);
             maxXInput.style.border = '2px solid red';
             return;
         }
@@ -173,11 +173,6 @@ actionBtn.onclick = () => {
         }
 
         grid.cells.forEach(cell => {
-            const sub = cell.querySelector('.sub-cell');
-            sub.classList.remove('marked');
-        });
-
-        grid.cells.forEach(cell => {
             const cx = parseInt(cell.dataset.x);
             const cy = parseInt(cell.dataset.y);
             if (cx === x && cy <= y) {
@@ -232,7 +227,7 @@ deleteBtn.onclick = () => {
 
     grids.forEach((grid, i) => {
         const heading = grid.container.querySelector('h3');
-        heading.textContent = `Grid ${i + 1}`;
+        heading.textContent = `Grid Graph ${i + 1}`;
         heading.onclick = () => {
             activeGridIndex = i;
             maxXInput.value = grid.maxX;
@@ -259,8 +254,6 @@ deleteBtn.onclick = () => {
 };
 
 
-
-
 function setInputLimits() {
     const isMobile = window.innerWidth <= 768; 
 
@@ -271,5 +264,3 @@ function setInputLimits() {
 setInputLimits();
 
 window.addEventListener('resize', setInputLimits);
-
-
