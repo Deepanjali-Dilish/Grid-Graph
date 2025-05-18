@@ -86,10 +86,6 @@ h2{
   background: white;
 }
 
-.marked{
-  background-color: #00f200;
-}
-
 input:focus {
   border: 2px solid #2265c9;
   outline: none;
@@ -98,7 +94,7 @@ input:focus {
 .grid-section {
   margin-top: 20px;
   padding: 10px;
-  background: #e6eff5;
+  background: #8499a6;
   border-radius: 6px;
 }
   
