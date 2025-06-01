@@ -392,3 +392,4 @@ window.addEventListener('resize', setInputLimits);
 //     gridContainer.innerHTML = '';
 //     grid = [];
 // };
+
